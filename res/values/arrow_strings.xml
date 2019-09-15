@@ -363,4 +363,6 @@
     <!-- UI styles -->
     <string name="theme_customization_ui_style_title">UI Style (Beta)</string>
     <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
+    <!-- Battery temperature -->
+    <string name="battery_temperature">Battery temperature</string>
 </resources>
