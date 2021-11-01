@@ -90,15 +90,17 @@
         android:selectable="false"
         android:title="@string/my_device_info_device_details_category_title">
 
+        <!-- Model & hardware -->
         <Preference
             android:title="@string/radio_info_title"
-            android:key="radio_info_settings"
-            android:order="6"
-            settings:controller="com.android.settings.deviceinfo.RadioInfoPreferenceController">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.phone"
-                    android:targetClass="com.android.phone.settings.RadioInfo" />
-        </Preference>
+            android:key="device_model"
+            android:order="10"
+            android:title="@string/model_info"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+            settings:enableCopying="true"
+            settings:keywords="@string/keywords_model_and_hardware"
+            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
 
         <!-- SIM status -->
         <Preference
@@ -109,17 +111,6 @@
             android:summary="@string/summary_placeholder"
             settings:isPreferenceVisible="@bool/config_show_sim_info"
             settings:enableCopying="true"/>
-
-        <!-- Model & hardware -->
-        <Preference
-            android:key="device_model"
-            android:order="31"
-            android:title="@string/model_info"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-            settings:enableCopying="true"
-            settings:keywords="@string/keywords_model_and_hardware"
-            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
