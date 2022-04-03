@@ -394,4 +394,10 @@
     <string name="lockscreen_weather_location_summary">Display current weather location</string>
     <string name="lockscreen_weather_style_title">Pixel style</string>
     <string name="lockscreen_weather_style_summary">Display weather as separate row</string>
+
+    <!-- Custom UDFPS icon -->
+    <string name="custom_fp_icon_title">Custom UDFPS icon</string>
+    <string name="custom_fp_icon_summary">Enable custom UDFPS icon</string>
+    <string name="custom_fp_select_title">Select custom UDFPS icon from storage</string>
+    <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
 </resources>
