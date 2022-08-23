@@ -359,4 +359,8 @@
     <string name="about_header_accent">Accent</string>
     <string name="about_header_lottie1">Alien Rocket</string>
     <string name="about_header_lottie2">Gibli Studio</string>
+
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI Style (Beta)</string>
+    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
 </resources>
