@@ -50,7 +50,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import com.arrow.support.preferences.SystemSettingListPreference;
-import com.android.internal.util.arrow.systemUtils;;
+import com.android.internal.util.arrow.systemUtils;
 import java.util.List;
 import java.util.ArrayList;
 @SearchIndexable
@@ -75,7 +75,7 @@ public class Header extends SettingsPreferenceFragment implements OnPreferenceCh
 	Context mContext = getActivity().getApplicationContext();
 	ContentResolver resolver = mContext.getContentResolver();
         if (preference == mAboutPhoneStyle) {
-            systemUtils;.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getContext());
             return true;
         }
         return false;

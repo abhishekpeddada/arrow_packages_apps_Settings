@@ -226,5 +226,7 @@
     <color name="google_grey700">#5f6368</color>
     <color name="edit_background_base">@color/google_grey700</color>
     <color name="option_border_default">@color/edit_background_base</color>
-
+    
+    <color name="header_txt_bg">@*android:color/system_accent1_300</color>
+    <color name="op_control_text_color_primary_inverse">@*android:color/system_neutral2_800</color>
 </resources>
