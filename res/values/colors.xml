@@ -222,4 +222,5 @@
     <color name="superior_background1">@android:color/system_neutral1_50</color>
     <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
 
+    <color name="bg_accent">@*android:color/system_accent1_200</color>
 </resources>

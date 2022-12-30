@@ -34,6 +34,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.UserInfo;
 import android.os.UserManager;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.TextView;
@@ -70,6 +71,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
     private static final String PREF_KEY_SUPPORT = "top_level_support";
     private static final String KEY_USER_CARD = "top_level_usercard";
+    private int mAboutPhoneStyle;
 
     private boolean mIsEmbeddingActivityEnabled;
     private TopLevelHighlightMixin mHighlightMixin;
@@ -105,6 +107,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         super.onAttach(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
+        getAboutPhoneStyle(context);
     }
 
     @Override
@@ -233,11 +236,19 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 	        preference.setLayoutResource(R.layout.usercard);
 	    }
 	    if (key.equals("top_level_about_device")){
-		preference.setLayoutResource(R.layout.top_about);
-            }else {
-		preference.setLayoutResource(R.layout.top_level_card);
-            }
-	}
+	        if (mAboutPhoneStyle == 0){
+		preference.setLayoutResource(R.layout.top_about_blur);
+		} else if (mAboutPhoneStyle == 1){
+		      preference.setLayoutResource(R.layout.top_about_scrim);
+		    } else if (mAboutPhoneStyle == 2){
+		          preference.setLayoutResource(R.layout.top_about_none);
+		        } else if (mAboutPhoneStyle == 3){
+		          preference.setLayoutResource(R.layout.top_about_accent);
+		   }
+             } else {
+		 preference.setLayoutResource(R.layout.top_level_card);
+                  }
+	    }
     }
 
     private void onUserCard() {
@@ -401,6 +412,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         return new HomepagePreference(getPrefContext());
     }
 
+
     void reloadHighlightMenuKey() {
         if (mHighlightMixin != null) {
             mHighlightMixin.reloadHighlightMenuKey(getArguments());
@@ -443,4 +455,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     return false;
                 }
             };
+            private void getAboutPhoneStyle(Context context) {
+        mAboutPhoneStyle = Settings.System.getIntForUser(context.getContentResolver(),
+                    "header_style", 0, UserHandle.USER_CURRENT);
+    }
 }

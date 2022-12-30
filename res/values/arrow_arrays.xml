@@ -155,4 +155,18 @@
         <item>1</item>
     </string-array>
 
+    <!-- About phone styles-->
+    <string-array name="about_style_entries" translatable="false">
+        <item>@string/about_header_blur</item>
+        <item>@string/about_header_scrim</item>
+        <item>@string/about_header_none</item>
+        <item>@string/about_header_accent</item>
+    </string-array>
+
+    <string-array name="about_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>
