@@ -357,4 +357,6 @@
     <string name="about_header_scrim">AccentScrim</string>
     <string name="about_header_none">Clean</string>
     <string name="about_header_accent">Accent</string>
+    <string name="about_header_lottie1">Alien Rocket</string>
+    <string name="about_header_lottie2">Gibli Studio</string>
 </resources>

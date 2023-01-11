@@ -243,8 +243,12 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 		    } else if (mAboutPhoneStyle == 2){
 		          preference.setLayoutResource(R.layout.top_about_none);
 		        } else if (mAboutPhoneStyle == 3){
-		          preference.setLayoutResource(R.layout.top_about_accent);
-		   }
+		              preference.setLayoutResource(R.layout.top_about_accent);
+		           } else if (mAboutPhoneStyle == 4){
+		                 preference.setLayoutResource(R.layout.top_about_lottie1);
+		                } else if (mAboutPhoneStyle == 5){
+		                       preference.setLayoutResource(R.layout.top_about_lottie2);
+		                    }
              } else {
 		 preference.setLayoutResource(R.layout.top_level_card);
                   }
