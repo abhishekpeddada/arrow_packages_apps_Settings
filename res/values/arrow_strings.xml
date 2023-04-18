@@ -365,4 +365,14 @@
     <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
     <!-- Battery temperature -->
     <string name="battery_temperature">Battery temperature</string>
+
+    <!-- UDFPS settings -->
+    <string name="udfps_settings_title">UDFPS customization</string>
+    <string name="udfps_settings_summary">Customize under-display fingerprint scanner</string>
+    <string name="udfps_icon_picker_title">UDFPS icon picker</string>
+    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
+    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
 </resources>

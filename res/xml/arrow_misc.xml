@@ -50,5 +50,11 @@
             android:title="@string/theme_customization_ui_style_title"
             android:summary="@string/theme_customization_ui_style_summary"
             android:fragment="com.android.settings.arrow.UIStyles"/>
+
+        <Preference
+            android:key="udfps_settings"
+            android:title="@string/udfps_settings_title"
+            android:summary="@string/udfps_settings_summary"
+            android:fragment="com.android.settings.arrow.UdfpsSettings" />
     </PreferenceCategory>
 </PreferenceScreen>
