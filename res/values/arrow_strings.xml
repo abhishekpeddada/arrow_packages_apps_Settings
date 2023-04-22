@@ -321,4 +321,6 @@
     <string name="qs_tile_hide_label_summary">Show only icon for QS tiles</string>
     <string name="qs_tile_vertical_layout_title">Vertical layout</string>
     <string name="qs_tile_vertical_layout_summary">Enable vertical layout for QS tiles</string>
+    <string name="qs_ui_title">Quick Settings UI</string>
+    <string name="android_eleven">Android 11</string>
 </resources>
