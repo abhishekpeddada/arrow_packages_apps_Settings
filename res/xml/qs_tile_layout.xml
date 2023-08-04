@@ -3,7 +3,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/qs_tile_layout_title">
+    android:title="@string/qs_layout_category_title">
     
     <!-- QS UI -->
     <com.arrow.support.preferences.SystemSettingListPreference
@@ -20,6 +20,13 @@
         android:entries="@array/qs_tile_shape_entries"
         android:entryValues="@array/qs_tile_shape_values"
         android:defaultValue="2" />
+
+        <com.arrow.support.preferences.SecureSettingListPreference
+            android:key="qs_brightness_slider_position"
+            android:title="@string/qs_brightness_slider_position_title"
+            android:entries="@array/qs_brightness_slider_position_entries"
+            android:entryValues="@array/qs_brightness_slider_position_values"
+            android:defaultValue="0" />
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="qs_tile_label_hide"
