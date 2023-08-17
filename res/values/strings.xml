@@ -10882,6 +10882,12 @@ Learn more at g.co/pixel/faceunlock."</string>
     <!-- Warning toast shown when data usage screen can't find specified app -->
     <string name="unknown_app">Unknown app</string>
 
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">by default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
+
     <!-- Label for list that shows all permissions -->
     <string name="app_permissions">Permission manager</string>
     <!-- Summary of permissions currently granted to apps [CHAR LIMIT=60] -->

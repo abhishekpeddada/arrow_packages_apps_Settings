@@ -308,9 +308,10 @@
     <string name="default_string">Default</string>
     
     <!-- QS tiles layout -->
-    <string name="qs_layout_category_title">QuickSettings</string>
+    <string name="qs_layout_category_title">QuickSettings Layout</string>
     <string name="qs_tile_layout_title">QS tiles layout</string>
     <string name="qs_tile_layout_summary">Customize QuickSettings panel</string>
+     <string name="qs_panel_title">QS Panel</string>
     <string name="qs_tiles_layout_category">Tiles layout</string>
     <string name="qs_rows_portrait_title">Rows (Portrait)</string>
     <string name="qqs_rows_portrait_title">Rows (Quick QS portrait)</string>
