@@ -56,5 +56,11 @@
             android:title="@string/udfps_settings_title"
             android:summary="@string/udfps_settings_summary"
             android:fragment="com.android.settings.arrow.UdfpsSettings" />
+
+      <Preference
+            android:key="omnijaws_settings"
+            android:title="@string/qs_weather_settings_title"
+            android:summary="@string/qs_weather_settings_summary"
+            android:fragment="com.android.settings.arrow.OmniJawsSettings" />
     </PreferenceCategory>
 </PreferenceScreen>
