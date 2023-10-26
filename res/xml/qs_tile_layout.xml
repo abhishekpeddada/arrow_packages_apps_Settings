@@ -4,6 +4,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/qs_tile_layout_title">
+    
+    <!-- QS UI -->
+    <com.arrow.support.preferences.SystemSettingListPreference
+        android:key="qs_ui_style"
+        android:title="@string/qs_ui_title"
+        android:entries="@array/qs_ui_entries"
+        android:entryValues="@array/qs_ui_values"
+        android:summary="%s"
+        android:defaultValue="0" />
+        	
+    <com.arrow.support.preferences.SecureSettingListPreference
+        android:key="qs_tile_shape"
+        android:title="@string/qs_tile_shape"
+        android:entries="@array/qs_tile_shape_entries"
+        android:entryValues="@array/qs_tile_shape_values"
+        android:defaultValue="2" />
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="qs_tile_label_hide"
@@ -16,7 +32,7 @@
         android:title="@string/qs_tile_vertical_layout_title"
         android:summary="@string/qs_tile_vertical_layout_summary"
         android:defaultValue="false" />
-
+        
     <PreferenceCategory
         android:key="tiles_layout"
         android:title="@string/qs_tiles_layout_category">
