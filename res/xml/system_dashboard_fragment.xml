@@ -75,8 +75,9 @@
     <!-- Misc -->
         <Preference
             android:key="misc_category"
-            android:title="@string/misc_title" 
+            android:title="@string/misc_title"
+            android:icon="@drawable/ic_settings_miscs"
+            android:order="0" 
             android:fragment="com.android.settings.arrow.MiscSettings"
-            settings:layout="@layout/superior_dashboard_preference_top"
-            android:icon="@drawable/ic_settings_miscs"/>
+            settings:controller="com.android.settings.system.ResetPreferenceController"/>
 </PreferenceScreen>

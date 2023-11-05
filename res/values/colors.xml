@@ -123,7 +123,7 @@
     <color name="notification_importance_button_selected">#1967D2</color> <!-- material blue 700 -->
     <color name="notification_importance_selection_bg">#FFFFFF</color>
     <color name="notification_history_background">?android:attr/colorBackgroundFloating</color>
-
+     <color name="homepage_subicon_bg">@*android:color/system_neutral1_900</color>
     <!-- launcher icon color -->
     <color name="icon_launcher_setting_color">@*android:color/accent_device_default_light</color>
 
@@ -219,4 +219,5 @@
 
     <!-- Icon tint color for battery usage system icon -->
     <color name="battery_usage_system_icon_color">?android:attr/textColorPrimary</color>
+    <color name="superior_background1">@android:color/system_neutral1_50</color>
 </resources>

@@ -20,4 +20,21 @@
         <item name="android:textColor">@color/primary_dark_material_light</item>
         <item name="android:lineSpacingMultiplier">1.2</item>
     </style>
+    <style name="superiorDashboardPreferenceTop" parent="LockPatternSizeHeaderStyle">
+        <item name="android:layout_marginTop">@dimen/superior_pref_horizontal_padding</item>
+    </style>
+   <!-- Text Styles -->
+    <style name="superiorTextPrimary">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+   <style name="superiorTextPrimaryMedium" parent="superiorTextPrimary">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>   
+    <style name="superiorTextSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
 </resources>
