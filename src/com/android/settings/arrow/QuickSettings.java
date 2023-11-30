@@ -133,19 +133,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             setQsStyle(mOverlayService, "com.android.system.qs.outline");
         } else if (qsPanelStyle == 2 || qsPanelStyle == 3) {
             setQsStyle(mOverlayService, "com.android.system.qs.twotoneaccent");
-        } else if (qsPanelStyle == 4) {
-            setQsStyle(mOverlayService, "com.android.system.qs.shaded");
-        } else if (qsPanelStyle == 5) {
-            setQsStyle(mOverlayService, "com.android.system.qs.cyberpunk");
-        } else if (qsPanelStyle == 6) {
-            setQsStyle(mOverlayService, "com.android.system.qs.neumorph");
-        } else if (qsPanelStyle == 7) {
-            setQsStyle(mOverlayService, "com.android.system.qs.reflected");
-        } else if (qsPanelStyle == 8) {
-            setQsStyle(mOverlayService, "com.android.system.qs.surround");
-        } else if (qsPanelStyle == 9) {
-            setQsStyle(mOverlayService, "com.android.system.qs.thin");
-        }    
+        } 
     }
 
     public static void setDefaultStyle(IOverlayManager overlayManager) {
