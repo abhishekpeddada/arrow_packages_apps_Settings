@@ -62,25 +62,5 @@
             android:title="@string/qs_weather_settings_title"
             android:summary="@string/qs_weather_settings_summary"
             android:fragment="com.android.settings.arrow.OmniJawsSettings" />
-
-     <PreferenceCategory
-        android:title="Custom Lockscreen Clock">
-
-        <com.arrow.support.preferences.SecureSettingSwitchPreference
-            android:key="clock_ls"
-            android:title="Use Custom Lockscreen Clock"
-            android:summary="use custom lockscreen clock instead of default clock"
-            android:defaultValue="false"/>
-
-        <com.arrow.support.preferences.SystemSettingListPreference
-            android:entries="@array/clock_style_entries"
-            android:title="Custom Clock style"
-            android:key="clock_style"
-            android:defaultValue="0"
-            android:dependency="clock_ls"
-            android:entryValues="@array/clock_style_values" />
-
-     </PreferenceCategory>
-
     </PreferenceCategory>
 </PreferenceScreen>
